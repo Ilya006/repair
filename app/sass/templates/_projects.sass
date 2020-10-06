@@ -1,0 +1,152 @@
+.projects
+  position: relative
+  padding-top: 7.4rem
+  padding-bottom: 22.7rem
+  background: $dark url(../img/dest/stripes-bg.png)
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover
+  &__title
+    font-size: 1.93rem
+  &__text
+    margin-bottom: 0.9rem 
+    font-size: 1.07rem;
+    line-height: 1.43rem;
+    font-weight: 400
+    font-family: 'Futura Book', sans-serif
+    text-transform: none
+    color: #fff
+  &__work
+    position: absolute
+    top: 110px
+.sw
+  &-slide
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    overflow: hidden
+    &__item
+      display: flex
+      flex-wrap: wrap
+      max-width: 450px
+      max-height: 220px
+      margin-top: 200px
+    &__text
+      min-width: 13.5rem
+      margin: 0
+      &:nth-child(even)
+        min-width: 16rem
+    &__heading
+      margin: 2.43rem 0 0.62rem
+      font-family: 'Yeseva One', cursive
+      font-size: 1.29rem
+      font-weight: 400
+      line-height: 1.79rem
+      color: $primary
+      text-transform: uppercase
+    &__value
+      font-size: 1.07rem
+      line-height: 1.43rem
+      font-weight: 400
+      color: #fff
+  &-pagination
+    &-bullet
+      background-color: rgba($light, 0.3)
+      width: 10px
+      height: 10px
+      &-active
+        background-color: $light
+  &-button
+    &-prev, &-next
+      bottom: 0
+      top: auto
+      background-size: 42px
+      width: 3rem
+      height: 1rem
+      &::after
+        display: none
+    &-prev
+      left: 0
+      background: url('../img/dest/arrow-prev.svg') no-repeat center
+    &-next
+      background: url('../img/dest/arrow-next.svg') no-repeat center
+.swiper-container-horizontal>.swiper-pagination-bullets
+  width: auto
+  bottom: 0
+
+
+// slick-slider
+.slider-container
+  position: relative
+  display: flex
+  justify-content: space-between
+  align-items: center
+.slick-arrow
+  position: absolute
+  left: 0
+  bottom: 0
+  padding: 0
+  z-index: 10
+  font-size: 0
+  width: 42px
+  height: 14px
+  background: transparent
+  border: none
+  cursor: pointer
+  &:active
+    outline: none
+  &:focus
+    outline: none
+.slick-prev
+  background: url('../img/dest/arrow-prev.svg') no-repeat center
+.slick-next
+  left: 159px
+  background: url('../img/dest/arrow-next.svg') no-repeat center
+.slick-list
+  position: relative
+  display: block
+  overflow: hidden
+  margin: 0
+  padding: 0
+.slick-track
+  display: flex
+  justify-content: space-between
+.slick-dots
+  position: absolute
+  left: 70px
+  bottom: -2px
+  display: flex
+  padding: 0
+  text-align: center
+  justify-content: center
+  list-style: none
+  margin: 0
+  & li
+    & button
+      list-style: none
+      font-size: 0
+      width: 10px
+      height: 16px
+      border: none
+      border-radius: 50%
+      width: 10px
+      height: 10px
+      margin: 5px
+      padding: 0
+      cursor: pointer
+      &:active
+        outline: none
+      &:focus
+        outline: none
+.slick-dots li button
+  background-color: #5A5A5A
+
+.slick-dots>.slick-active button
+  background-color: #fff
+
+.sw__img
+  position: relative
+  display: flex
+  & img
+    display: block
+    max-width: 670px

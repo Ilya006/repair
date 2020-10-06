@@ -1,0 +1,27 @@
+.command__wrap {
+  display: flex;
+  justify-content: space-between; }
+
+.command__box {
+  display: flex;
+  flex-direction: column; }
+
+.command__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.command__photo {
+  display: block;
+  width: 100%;
+  height: auto; }
+
+.command__icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  display: block; }
+
+.image__wrap {
+  position: relative; }
