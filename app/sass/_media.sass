@@ -2,27 +2,42 @@
   .menu
     &__nav
       padding: 0 2rem
+
   .nav
     &__link
       margin-right: 1rem
 
   .projects
     padding-bottom: 27rem
+    &__work 
+      left: 50%
+      top: 55px
+      transform: translateX(-50%)
     &__phone
       margin-right: 1rem  
     &__button
       margin: 0
+
   .swiper-slide
     &__text
       &:nth-child(even)
         min-width: 15rem
+
+  .sw-slide 
+    justify-content: center
+
   .card
     &__text
       padding: 1.7rem 0 .7rem 1rem
       max-width: 90%
+
   .footer
     &__map
       max-width: 100%
+
+  .slick
+    &-arrow, &-dots 
+      bottom: -40px
 
 
 
@@ -62,7 +77,7 @@
 
   .projects
     padding-top: 2.52rem
-    padding-bottom: 3rem
+    padding-bottom: 4rem
     background-image: none
   .col-60, .col-40
     width: 100%
@@ -79,6 +94,7 @@
           min-width: 70%
 
   .control
+    padding-top: 50px
     background-color: $dark
     margin-top: 0
     &__text
@@ -197,18 +213,25 @@
       &-group
         max-width: 13rem
 
+  .projects
+    &__work 
+      width: 85%
+    &__text
+
 @media screen and ( max-height:  600px )
   .hero
     &::after
       display: none
     &__scroll-down
       display: none
- 
+
 
 @media screen and ( max-height:  515px )
   .modal
     &__input
       margin-bottom: 1.5rem
+
+
     
 @media screen and ( max-height:  442px )
   .modal
@@ -337,8 +360,6 @@
       width: 100%
       &::placeholder
         font-size: 1.25rem
-    &__button
-      bottom: -3rem
   .video
     &__play
       max-width: 70px
@@ -460,10 +481,6 @@
     &__input
       &-group
         min-width: 100%
-  //  em
-  //   &.footer__invalid
-  //     &:nth-last-child(2)
-  //       width: 100%
 
   .modal
     &-title
@@ -472,10 +489,6 @@
       padding-left: 1rem
       padding-right: 1rem
 
-  .projects
-    &__text
-      max-width:  21.79rem
-  
   .footer
     &__form
       align-items: end
