@@ -18,12 +18,12 @@
     "gulp-imagemin": "^7.1.0",
     "gulp-minify": "^3.1.0",
     "gulp-newer": "^1.4.0",
-    "gulp-sass": "^4.1.0",
-    "gulp-uglify-es": "^2.0.0",
-    "node-sass": "^4.14.1"
+    "gulp-uglify-es": "^2.0.0"
   },
   "dependencies": {
     "gulp-htmlmin": "^5.0.1",
-    "gulp-tinypng-compress": "^1.2.5"
+    "gulp-sass": "^5.1.0",
+    "gulp-tinypng-compress": "^1.2.5",
+    "sass": "^1.52.1"
   }
 }
